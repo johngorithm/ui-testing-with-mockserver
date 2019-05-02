@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">UI Test With MockWebServer</string>
+    <string name="first_view">Loading &#8230;</string>
+</resources>
