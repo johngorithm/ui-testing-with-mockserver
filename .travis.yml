@@ -1,4 +1,3 @@
-
 language: android
 jdk: oraclejdk8
 env:
@@ -18,6 +17,7 @@ android:
   - sys-img-armeabi-v7a-android-22
 
 before_install:
+- yes | sdkmanager "platforms;android-22"
 - yes | sdkmanager "platforms;android-28"
 - pip install --user codecov
 
@@ -26,6 +26,7 @@ before_script:
 - emulator -avd test -no-audio -no-window &
 - android-wait-for-emulator
 - adb shell input keyevent 82 &
+
 
 script:
 - ./gradlew jacocoTestReport

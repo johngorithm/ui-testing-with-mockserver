@@ -39,8 +39,7 @@ android {
     }
 
     testOptions {
-        execution 'ANDROID_TEST_ORCHESTRATOR'
-        animationsDisabled false
+        animationsDisabled true
 
         unitTests {
             includeAndroidResources = false
