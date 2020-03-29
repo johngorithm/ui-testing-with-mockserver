@@ -1,4 +1,4 @@
-### ui testing with mockwebserver
+### Android Instrumentation testing with MockWebServer
 
 This Project demonstrates how to use **mockWebServer** to mock **apollo-android** api response in `Android instrumentation testing`. `100%` Test Coverage is possible in Android.
 
